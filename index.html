@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Thought - Project Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1><img class="bg" src="https://deepthought.education/assets/images/logo/logo.svg" alt="User Icon"></h1>
+        <div class="user-icons">
+           <img class="bg" src="./64572.png" alt="User Icon">
+            <img class="bg" src="./503849.png" alt="Settings Icon">
+            <img class="bg" src="./3602145.png" alt="Notifications Icon">
+        </div>
+    </header>
+
+    <!-- New open button for the journey board -->
+    <button class="open-btn" onclick="toggleJourneyBoard()">&#9654;</button>
+
+    <main>
+        <aside class="journey-board collapsed">
+            <div class="journey-header">
+                <h2>Journey Board</h2>
+                <!-- <button class="toggle-btn" onclick="toggleJourneyBoard()">&#9654;</button> -->
+                <button class="close-btn" onclick="toggleJourneyBoard()">✖</button>
+            </div>
+            <ul>
+                <li>Explore the world of management</li>
+                <li>Technical Project Management</li>
+                <li>ThreadBuild</li>
+                <li>Structure your pointers</li>
+                <li>4SA Method</li>
+            </ul>
+        </aside>
+
+        <section class="content">
+            <h2>Technical Project Management</h2>
+            <h2><button class="submit-btn">Submit</button></h2>
+            <p class="description"> <b>Explore the world of management </b><br>
+                Description: Apply an important metric in leading a project through initiation, planning, execution, monitoring, controlling, and closure. Learn how to manage each and every step of your life!
+            </p>
+
+            <div class="card">
+                <h3 class="card-title">Technical Project Management <i class='fas fa-info-circle info-icon'></i></h3>
+                <p>Description: Explore the scope of applying specific metrics to project management.</p>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/video-id" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">ThreadBuild <i class='fas fa-info-circle' style='font-size:24px'></i></h3>
+                <p>Description: Watch the video and create threads to organize your understanding.</p>
+                <div class="thread">
+                    <div class="container">
+                        <div class="text-box">
+                            <h4>Sub Thread 1</h4>
+                            <input type="text" placeholder="Enter Text Here">
+                        </div>
+                        <div class="text-box">
+                            <h4>Sub Interpretation 1</h4>
+                            <input type="text" placeholder="Enter Text Here">
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown-icon-container">
+                        <div class="dropdown-container">
+                            <select class="dropdown">
+                                <option>Select Category</option>
+                                <option>Category 1</option>
+                                <option>Category 2</option>
+                                <option>Category 3</option>
+                            </select>
+            
+                            <select class="dropdown">
+                                <option>Select Process</option>
+                                <option>Process 1</option>
+                                <option>Process 2</option>
+                                <option>Process 3</option>
+                            </select>
+                        </div>
+                        
+                        <div class="icon-container">
+                            <i class="fas fa-lightbulb"></i>
+                            <i class="fas fa-comment-alt"></i>
+                            <i class="fas fa-question-circle"></i>
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                    </div>
+                    
+                    <button class="submit-btn">Sub thread</button><br>
+                    <div class="text-box">
+                        <h4>Summary of thread 1</h4>
+                        <input type="text" placeholder="Enter Text Here">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">Structure your Pointers <i class='fas fa-info-circle' style='font-size:24px'></i></h3>
+                <p>Description: Write a 200-300 word structure from your thread. Explain your understanding and showcase your knowledge in your own words.</p>
+                <div class="container">
+                    <label for="title" class="label">Title</label>
+                    <input type="text" id="title" class="title-input" placeholder="Enter title here">
+                
+                    <label for="content" class="label">Content</label>
+                    <div class="editor">
+                        <div class="toolbar">
+                            <span>File</span>
+                            <span>Edit</span>
+                            <span>View</span>
+                            <span>Insert</span>
+                            <span>Format</span>
+                            <span>Tools</span>
+                            <span>Table</span>
+                            <span>Help</span>
+                        </div><br>
+                        <div class="editor-toolbar">
+                            <i class="fas fa-undo"></i>
+                            <i class="fas fa-redo"></i>
+                            <i class="fas fa-expand"></i>
+                            <i class="fas fa-image"></i>
+                            <select class="editor-dropdown">
+                                <option>Paragraph</option>
+                                <option>Heading 1</option>
+                                <option>Heading 2</option>
+                            </select>
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                        <div class="editor-content" contenteditable="true">
+                            <!-- This area is editable in real editors -->
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">4SA Method <i class='fas fa-info-circle' style='font-size:24px'></i></h3>
+                <div >
+                    <p>Description: <span>To explore more read more</span></p>
+                </div>
+            
+                <div class="new-intro-section">
+                    <button class="new-intro-header" onclick="toggleSection('intro')">
+                        Introduction
+                    </button>
+                    <div class="new-intro-content" id="intro">
+                        <p>The 4SA Method, How to bring an idea into process?</p>
+                        <a href="#">See more</a>
+                    </div>
+                </div>
+                
+                <div class="new-thread-section">
+                    <button class="new-section-header" onclick="toggleSection('threadA')">
+                        Thread A
+                    </button>
+                    <div class="new-thread-content" id="threadA">
+                        <p>How are you going to develop your strategy? Which method are you going to use to develop a strategy? What if the project is lengthy?</p>
+                        <a href="#">See more</a>
+                
+                        <div class="new-example-section">
+                            <button class="new-example-header">
+                                Example 1
+                            </button>
+                            <div class="new-example-content">
+                                <p>You have a concept; how will you put it into process?</p>
+                            </div>
+                        </div>
+            
+            
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
